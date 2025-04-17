@@ -1,0 +1,56 @@
+{
+  "collectionName": "articoli",
+  "info": {
+    "singularName": "articolo",
+    "pluralName": "articoli",
+    "displayName": "Articolo",
+    "description": "Contenuti pubblicati su FinAI24"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "timestamps": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "titolo": {
+      "type": "string",
+      "required": true
+    },
+    "contenuto": {
+      "type": "richtext"
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "geopolitica",
+        "macro",
+        "borse",
+        "criptovalute"
+      ]
+    },
+    "fonte": {
+      "type": "string"
+    },
+    "urlSorgente": {
+      "type": "string"
+    },
+    "immagine": {
+      "type": "media",
+      "multiple": false
+    },
+    "dataPubblicazione": {
+      "type": "datetime"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titolo"
+    }
+  }
+}
