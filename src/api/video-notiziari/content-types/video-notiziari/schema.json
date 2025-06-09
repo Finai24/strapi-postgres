@@ -27,12 +27,7 @@
     },
     "argomento": {
       "type": "enumeration",
-      "enum": [
-        "geopolitica",
-        "macro",
-        "borse",
-        "criptovalute"
-      ]
+      "enum": ["geopolitica", "macro", "borse", "criptovalute"]
     },
     "videoUrl": {
       "type": "string"
@@ -47,3 +42,4 @@
     }
   }
 }
+
