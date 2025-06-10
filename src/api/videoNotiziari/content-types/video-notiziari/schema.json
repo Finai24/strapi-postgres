@@ -1,0 +1,44 @@
+{
+  "collectionName": "video_notiziari",
+  "info": {
+    "singularName": "video-notiziari",
+    "pluralName": "video-notiziari",
+    "displayName": "Video Notiziari",
+    "description": "Video AI generati per FinAI24"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "titolo": {
+      "type": "string",
+      "required": true
+    },
+    "descrizione": {
+      "type": "text"
+    },
+    "argomento": {
+      "type": "enumeration",
+      "enum": ["geopolitica", "macro", "borse", "criptovalute"]
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "dataPubblicazione": {
+      "type": "datetime"
+    },
+    "copertina": {
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}
